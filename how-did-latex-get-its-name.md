@@ -22,7 +22,7 @@ TeX is actually the name of a typesetting language created by Donald Knuth.
 
 Leslie Lamport built LaTeX on top of TeX.
 
-LaTeX is kind of like an extension of TeX, because it adds a new collection of macros to TeX, which make it easier to use.
+LaTeX is kind of like an extension of TeX, because it adds a new collection of macros to TeX, which makes it easier to use.
 
 So the "TeX" in LaTeX is also a reference to the typesetting language that Donald Knuth created, on which LaTeX is based.
 
