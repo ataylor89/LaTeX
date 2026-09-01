@@ -1,0 +1,88 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage[margin=1in]{geometry}
+\usepackage[skip=1em]{parskip}
+\title{Solving a quadratic equation}
+\author{Andrew Taylor}
+\date{\today}
+\begin{document}
+\maketitle
+Consider the equation $x^2 + 10x + 21 = 0$.
+
+We call this a quadratic equation, because it's a polynomial of order 2.
+
+(A polynomial of order 1 is called a linear equation, and a polynomial of order 3 is called a cubic equation.)
+
+There are a couple ways we can solve this equation.
+
+First, we can solve the equation by factoring.
+
+Notice that $3 * 7 = 21$ and $3 + 7 = 10$.
+
+This observation helps us factor the equation.
+
+$x^2 + 10x + 21 = (x + 3)(x + 7)$.
+
+In factored form, it's easy to spot the zeroes.
+
+The quadratic has two zeroes, one at $x = -3$ and one at $x = -7$.
+
+We also call these values roots. We say the quadratic has two real roots.
+
+The fundamental theorem of algebra tells us that a polynomial of degree $n$ has exactly $n$ complex roots, provided that $n$ is a positive integer.
+
+This means our work is done; we have found every complex solution to the equation $x^2 + 10x + 21 = 0$.
+
+Before I conclude this document, I would like to point out another way of solving this equation.
+
+In addition to factoring the equation, we can also use the quadratic formula.
+
+The quadratic formula states that $x = \dfrac{-b +- \sqrt{b^2 - 4ac}}{2a}$ are the solutions to the equation
+
+$$ ax^2 + bx + c = 0.$$
+
+Let's apply the quadratic formula to our equation, $x^2 + 10x + 21 = 0$.
+
+We plug $a = 1$, $b = 10$, and $c = 21$ into the quadratic formula, and get
+
+\begin{align*}
+x &= \dfrac{-b +- \sqrt{b^2 - 4ac}}{2a} \\
+&= \dfrac{-10 +- \sqrt{10^2 - 4(1)(21)}}{2(1)} \\
+&= \dfrac{-10 +- \sqrt{100 - 84}}{2} \\
+&= \dfrac{-10 +- \sqrt{16}}{2} \\
+&= \dfrac{-10 +- 4}{2} \\
+&= -5 +- 2 \\
+&= \{-3, -7\}
+\end{align*}
+
+We arrive at the same result (that the roots are $-3$ and $-7$) by applying the quadratic formula.
+
+In conclusion, we have demonstrated two ways of solving the equation $x^2 + 10x + 21 = 0$.
+
+One way is to factor the equation. Then we are easily able to spot the zeroes.
+
+Another way is to apply the quadratic formula. It takes some work, but the quadratic formula comes in handy when a quadratic equation is difficult to factor. (Some quadratic equations are really difficult to factor!)
+
+In addition to solving the equation, I also wanted to write a document that showcases the LaTeX markup language.
+
+LaTeX is a mathematical markup language.
+
+A markup language is a language that helps us prepare a formatted document.
+
+You can see that I used the LaTeX markup language to generate a PDF with mathematical equations and mathematical expressions.
+
+I like to say that LaTeX is the gold standard for writing mathematical documents, in the same way that HTML is the gold standard for writing web pages.
+
+The LaTeX markup language goes hand in hand with the Asymptote vector graphics language.
+
+You can find examples of LaTeX documents here: https://github.com/ataylor89/latex.
+
+You can find examples of Asymptote documents here: https://github.com/ataylor89/asymptote.
+
+(I wanted to include examples of both LaTeX documents and Asymptote documents on my Github, along with the PDF files that they generate when they are compiled. I use the command ``pdflatex filename.tex'' to compile a LaTeX file. I use the command ``asy -f pdf filename.asy'' to compile an Asymptote file.)
+
+Thanks for reading,\\
+Andrew
+
+PS. Where do you download LaTeX? Where do you download Asymptote? If you have macOS, like me, you can get both LaTeX and Asymptote by installing the MacTeX package from tug.org, which you can find at https://tug.org/mactex/. It's a two-in-one deal... both LaTeX and Asymptote are included in the MacTeX package. After installing MacTeX, I was able to use the latex, pdflatex, and asy commands on the command-line in Terminal. (If they don't get automatically added to your PATH, then you can add them to your PATH, but in my case, they were automatically added to my PATH, and I started using them right away.)
+\end{document}
